@@ -28,6 +28,20 @@ android {
         }
     }
 
+    flavorDimensions 'environment'
+    defaultConfig {
+
+    }
+    productFlavors {
+        qa {
+            dimension 'environment'
+            buildConfigField "String", "WEB_PATH", '"https://easyafph.herokuapp.com"'
+        }
+        live {
+            dimension 'environment'
+            buildConfigField "String", "WEB_PATH", '"https://easyafphprod.herokuapp.com"'
+        }
+    }
 }
 
 dependencies {
