@@ -1,0 +1,3 @@
+rootProject.name = "EAAPIRequests"
+include ':app'
+include ':eaapirequests'
